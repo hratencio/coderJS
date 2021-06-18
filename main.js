@@ -8,7 +8,21 @@ usuario();*/
 function edad(){
     let edad = prompt('Cual es tu edad?');
     if(edad >= 18){
-        console.log('Bienvenido, puedes ingresar')
+        alert('Bienvenido, puedes ingresar')
     } else if (edad < 18){
-        console.log('Lo siento... necesitas autorización')}
+        alert('Lo siento... necesitas autorización')}
     }
+
+function despegue(){
+    for(let i = 5; i > 0; i--){
+        console.log(i);
+        if(i == 1){
+            console.log('Ignition! The rocket is flying.')
+            let rocket;
+           do {
+               alert('The rocket is in course to mars!')
+           } while (rocket);
+        }
+    }
+}
+despegue();
