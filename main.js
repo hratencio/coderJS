@@ -13,7 +13,7 @@ function edad(){
         alert('Lo siento... necesitas autorización')}
     }
 
-function despegue(){
+/*function despegue(){
     for(let i = 5; i > 0; i--){
         console.log(i);
         if(i == 1){
@@ -24,5 +24,27 @@ function despegue(){
            } while (rocket);
         }
     }
+} 
+despegue(); */
+
+function math(){
+    let operacion = prompt('Que calculo matematico desea realizar?');
+    let numero1 = Number(prompt('Introduce el primer numero'));
+    let numero2 = Number(prompt('Introduce el segundo numero'));
+
+    if(operacion == 'suma'){
+       let resultado = numero1 + numero2;
+       alert(resultado);
+    } else if(operacion == 'resta'){
+        let resultado = numero1 - numero2;
+        alert(resultado)
+    } else if(operacion == 'multiplicacion'){
+        let resultado = numero1 * numero2;
+        alert(resultado)
+    } else if (operacion == 'division'){
+        let resultado = numero1 / numero2;
+        alert(resultado)
+    }else{
+        alert('porfavor introduzca los datos pedidos.');
+    }
 }
-despegue();
