@@ -50,7 +50,7 @@ function math(){
 }
 
 // Desafío complementario. 
-let productos = {
+const productos = {
     cerveza: 100,
     cococola: 80,
     agua: 50
