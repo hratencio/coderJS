@@ -48,3 +48,34 @@ function math(){
         alert('porfavor introduzca los datos pedidos.');
     }
 }
+
+// Desafío complementario. 
+let productos = {
+    cerveza: 100,
+    cococola: 80,
+    agua: 50
+}
+function iva(){
+let iva = 0.21;
+let producto = prompt('Que producto deseas comprar?');
+switch (producto) {
+    case 'cerveza':
+        let cervezaIva = productos.cerveza * iva;
+        let cerveza = cervezaIva + productos.cerveza;
+        alert(`Una cerveza cuesta ${cerveza}$`);
+        break;
+    case 'cocacola':
+        let cocacolaIva = productos.cococola * iva;
+        let cocacola = cocacolaIva + productos.cococola
+        alert(`Una cocacola cuesta ${cocacola}$`);
+        break;
+    case 'agua':
+        let aguaIva = productos.agua * iva;
+        let agua = productos.agua + aguaIva;
+        alert(`una botella de agua cuesta ${agua}$`);
+    default:
+        alert('Porfavor introduzca uno de los tres productos validos.')
+        break;
+}
+}
+// ------------------------------------------
