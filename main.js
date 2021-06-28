@@ -79,3 +79,23 @@ switch (producto) {
 }
 }
 // ------------------------------------------
+
+class Bicicletas{
+    constructor(nombre, marca, modelo, precio){
+        this.nombre = nombre;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.precio = precio;
+    }
+    precioFinal(){
+        let iva = this.precio * 0.21;
+        let precioFinal = this.precio + iva;
+        console.log(precioFinal);
+    }
+}
+
+let bici1 = new Bicicletas('HardRock','Specialized','CrossCountry',500);
+bici1.precioFinal();
+
+let bici2 = new Bicicletas('HighTower','SantaCruz','Enduro', 1500)
+bici2.precioFinal();

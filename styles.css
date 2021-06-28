@@ -45,3 +45,12 @@ background-color: black;
 color: white;
 transition: 1s;
 }
+footer{
+    background-color: black;
+    min-height: 7vh;
+}
+footer div{
+    padding-top: 1%;
+    text-align: center;
+    color: white;
+}
