@@ -80,6 +80,12 @@ switch (producto) {
 }
 */
 // ------------------------------------------
+function usuario(){
+    let nombre = prompt('Cual es tu nombre');
+    let apellido = prompt('Caul es tu apellido?');
+    alert(`Hola, ${nombre} ${apellido} Bienvenidos a Baires Bikes!`);
+}
+
 
 class Bicicleta{
     constructor(nombre, marca, modelo, precio){

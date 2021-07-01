@@ -30,6 +30,14 @@ h2{
     color: white;
     font-size: 2rem;
 }
+h3{
+    color: white;
+}
+h3:hover{
+    color: teal;
+    transition: 1s;
+}
+
 main{
     background-color: teal;
     min-height: 100vh;
@@ -72,10 +80,10 @@ main{
     font-family: 'Staatliches', 'cursive';
     font-size: 1rem;
     border: none;
+    background-color: black;
 }
 #boton:hover{
 background-color: black;
-color: white;
 transition: 1s;
 }
 footer{
