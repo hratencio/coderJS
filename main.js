@@ -124,7 +124,12 @@ const CC = Bicicletas.filter(Bicicleta => Bicicleta.modelo == 'CrossCountry');
 console.log(CC);
 const Ruta = Bicicletas.filter(Bicileta => Bicileta.modelo == 'Carretera');
 console.log(Ruta);
-function comparar(a,b){
- return a - b;
-}
+const PreciosCrecientes = Bicicletas.sort(function(a,b){
+    return a.precio - b.precio;
+})
+console.log(PreciosCrecientes);
 
+const Decrecientes = Bicicletas.sort(function(a,b){
+    return b.precio - a.precio;
+})
+console.log(Decrecientes);
