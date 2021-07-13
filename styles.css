@@ -60,16 +60,16 @@ main{
     text-align: center;
     margin: 2%;
 }
-.grid1{
+#grid1{
     border: 2px solid black;
 }
-.grid2{
+#grid2{
     border: 2px solid black;
 }
-.grid3{
+#grid3{
     border: 2px solid black;
 }
-.grid4{
+#grid4{
     border: 2px solid black;
 }
 .imagenes{

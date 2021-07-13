@@ -139,3 +139,25 @@ const Decrecientes = Bicicletas.sort(function(a,b){
     return b.precio - a.precio;
 })
 console.log(Decrecientes);
+
+let nombreBici1 = document.getElementById('grid1');
+nombreBici1.innerHTML = `<h3> ${bici1.nombre} </h3>
+                        <p> Marca: ${bici1.marca} </p>
+                        <p> Modelo: ${bici1.modelo} </p>
+                        <p> Precio: ${bici1.precio}</p>`;
+                         
+let nombreBici2 = document.getElementById('grid2');
+nombreBici2.innerHTML = `<h3> ${bici2.nombre} </h3>
+                        <p> Marca: ${bici2.marca} </p>
+                        <p> Modelo: ${bici2.modelo} </p>
+                        <p> Precio: ${bici2.precio}</p>`;
+let nombreBici3 = document.getElementById('grid3');
+nombreBici3.innerHTML = `<h3> ${bici3.nombre} </h3>
+                         <p> Marca: ${bici3.marca} </p>
+                         <p> Modelo: ${bici3.modelo} </p>
+                         <p> Precio: ${bici3.precio}</p>`;
+let nombreBici4 = document.getElementById('grid4');
+nombreBici4.innerHTML = `<h3> ${bici4.nombre} </h3>
+                        <p> Marca: ${bici4.marca} </p>
+                        <p> Modelo: ${bici4.modelo} </p>
+                        <p> Precio: ${bici4.precio}</p>`;
