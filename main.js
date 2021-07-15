@@ -86,7 +86,7 @@ nombreBici4.innerHTML = `<h3> ${bici4.nombre} </h3>
  <p> Modelo: ${bici4.modelo} </p>
  <p> Precio: ${bici4.precio}</p>
  <button class="boton"> Comprar </button>`;
- 
+
 
 let boton = document.getElementById("boton");
 boton.onclick = () => {
@@ -94,4 +94,9 @@ boton.onclick = () => {
 }
 let nombreUsuario = document.getElementById("nombreUsuario");
 nombreUsuario.onkeypress = () => {console.log("EL USUARIO ESCRIBIO ALGO")};
-
+//---------------------------------
+let texto = document.createElement("h2");
+texto.innerHTML = `<h2> Este es el fundador de la MountainBike </h2>
+<img src="https://watermanatwork.com/blog/wp-content/uploads/2013/01/JacquiePhelan.jpg" alt="" srcset="">
+"<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis magni dicta minus non quas corrupti quasi porro illo, nemo inventore enim est nam id deleniti, harum odio, voluptates suscipit mollitia! </p>";`;
+document.body.appendChild(texto);
