@@ -44,6 +44,8 @@ Bicicletas.push(bici7);
 Bicicletas.push(bici8);
 Bicicletas.push(bici9);
 Bicicletas.push(bici10);
+Bicicletas.push(bici11);
+Bicicletas.push(bici12);
 
 const MTB = Bicicletas.filter(Bicicleta => Bicicleta.modelo == 'Trail');
 console.log(MTB);
@@ -54,49 +56,35 @@ console.log(Ruta);
 const PreciosCrecientes = Bicicletas.sort(function(a,b){
     return a.precio - b.precio;
 })
-console.log(PreciosCrecientes);
+
 
 const Decrecientes = Bicicletas.sort(function(a,b){
     return b.precio - a.precio;
 })
-console.log(Decrecientes);
 
-let nombreBici1 = document.getElementById('grid1');
-nombreBici1.innerHTML = `<h3> ${bici1.nombre} </h3>
-   <p> Marca: ${bici1.marca} </p>
-   <p> Modelo: ${bici1.modelo} </p>
-   <p> Precio: ${bici1.precio}</p>
-   <button id="boton"> Comprar </button>`;
-                         
-let nombreBici2 = document.getElementById('grid2');
-nombreBici2.innerHTML = `<h3> ${bici2.nombre} </h3>
-   <p> Marca: ${bici2.marca} </p>
-   <p> Modelo: ${bici2.modelo} </p>
-   <p> Precio: ${bici2.precio}</p>
-   <button class="boton"> Comprar </button>`;
-let nombreBici3 = document.getElementById('grid3');
-nombreBici3.innerHTML = `<h3> ${bici3.nombre} </h3>
-  <p> Marca: ${bici3.marca} </p>
-  <p> Modelo: ${bici3.modelo} </p>
- <p> Precio: ${bici3.precio}</p>
-  <button class="boton"> Comprar </button>`;
-let nombreBici4 = document.getElementById('grid4');
-nombreBici4.innerHTML = `<h3> ${bici4.nombre} </h3>
- <p> Marca: ${bici4.marca} </p>
- <p> Modelo: ${bici4.modelo} </p>
- <p> Precio: ${bici4.precio}</p>
- <button class="boton"> Comprar </button>`;
+for (const bicis of Bicicletas){
+    $('#todasBicis').prepend(`<div id="grid1">
+    <h3> ${bicis.nombre} </h3>
+   <p> Marca: ${bicis.marca} </p>
+   <p> Modelo: ${bicis.modelo} </p>
+   <p> Precio: ${bicis.precio}</p>
+   <button id="boton"> Comprar </button>
+   </div>`);
 
-
-let boton = document.getElementById("boton");
-boton.onclick = () => {
-    console.log('Desea comprar esta bicicleta?');
+   $("#boton").on('click', function(){
+       console.log(`Agregaste ${bicis.nombre} al carrito`);
+   });
 }
-let nombreUsuario = document.getElementById("nombreUsuario");
-nombreUsuario.onkeypress = () => {console.log("EL USUARIO ESCRIBIO ALGO")};
-//---------------------------------
-let texto = document.createElement("h2");
-texto.innerHTML = `<h2> Este es el fundador de la MountainBike </h2>
-<img src="https://watermanatwork.com/blog/wp-content/uploads/2013/01/JacquiePhelan.jpg" alt="" srcset="">
-"<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis magni dicta minus non quas corrupti quasi porro illo, nemo inventore enim est nam id deleniti, harum odio, voluptates suscipit mollitia! </p>";`;
-document.body.appendChild(texto);
+/*Bicicletas.forEach(function(bicis){
+    let nombreBici1 = document.getElementById('todasBicis');
+    nombreBici1.innerHTML += `
+    <div id="grid1">
+    <h3> ${bicis.nombre} </h3>
+   <p> Marca: ${bicis.marca} </p>
+   <p> Modelo: ${bicis.modelo} </p>
+   <p> Precio: ${bicis.precio}</p>
+   <button id="boton"> Comprar </button>
+   </div>
+   `;
+})*/
+
