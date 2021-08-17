@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    display: flex;
+    font-family: 'Bungee Shade', cursive;
+    color: white;
+}
+#elemento0{
+   margin-left: 1%;
+} 
+#nav-bar{
+    display: flex;
+    margin-left: 50%; 
+    margin-top: 1%;   
+    color: white;
+}
+#elemento1{ 
+  margin-left: 12%;
+}
+#elemento1:hover{
+    color: rgb(160, 159, 159);
+}
+#elemento2{
+    height: 95vh;
+    background-image: url(https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2018/07/10/4f0eb2e5-f6fa-4ca6-98ff-29a0701516ea/mtb-collection);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    font-family: 'Bungee Shade', cursive;
+}
+#p1{
+    padding-top: 20%;
+    padding-left: 5%;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
