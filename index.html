@@ -4,45 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Baires Bikes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <h2>Baires Bikes</h2>
-      <ul>
-        <li>home</li>
-        <li>Mountain Bike</li>
-        <li>Ruta</li>
-        <li>Casual</li>      
-      </ul>
-      <form>
-      <input id="nombreUsuario" type="text" value="Escribe tu nombre de usuario aca.">
-    </form>
-    </nav>
-  </header>
-  <main>
-    
- 
- <div class="primerDiv">
-   <div class="textoPrDiv">
- <h2>Domina la montaña</h2>
- <p>y desciende con las mejores marcas</p>
-   </div>
- </div>
+    <header>
+        <div id="navbar-sticky">
+            <div id="elemento0">
+                <h1>Baires bikes</h1>
+            </div>
+            <div id="nav-bar">
+                <p id="elemento1">MTB</p>
+                <p id="elemento1">Ruta</p>
+                <p id="elemento1">Urbanas</p>
+                <p id="elemento1">Contancto</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="elemento2">
+            <p id="p1">La montaña es tu patio de recreo.</p>
+        </div>
+        <div id="elemento3">     
+        </div>
 
- <div id="todasBicis">
-  
- </div>
-  </main>
-  <footer>
-    <div>
-      <p>©2021. Hugo Atencio. All Rights Reserved.</p>
-    </div>
-  </footer>
-</body>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <div id="elemento4">
+            <h2>Carrito de compras</h2>
+            <div id="carrito">
+                <div class="ladoIzquierdo">
+                    <h3>Bicicleta:</h3>
+                </div>
+                <div id="dropdownDiv">
+                    <input type="text" id="biciNombre" disabled>
+                </div>
+                <div class="ladoIzquierdo">
+                    <h3>Precio:</h3>
+                </div>
+                <div id="ladoDerecho">
+                    <input type="text" id="precio" disabled>
+                </div>
+                <div class="ladoIzquierdo">
+                    <h3>Costos de envío:</h3>
+                </div>
+                <div id="ladoDerecho">
+                    <input type="text" id="costosEnvio" disabled>
+                </div>
+                <div class="ladoIzquierdo">
+                    <h3>Subtotal:</h3>
+                </div>
+                <div id="ladoDerecho">
+                    <input type="text" id="subtotal" disabled>
+                </div>
+                <div class="ladoIzquierdo">
+
+                </div>
+                <div id="ladoDerecho">
+                    <button id="botonConfirmar">Confirmar</button>
+                    <h3 id="anuncioI">El precio final de la bicicleta se le suma un iva del 15%</h3>
+                </div>
+            </div>
+        </div>
+        <div>
+           <table>
+               <thead>
+                   <tr id="filaItems">
+                        <th>#</th>
+                        <th>Bicicleta</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Eleminar</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <th id="scope">1</th>
+                   <td>
+                       <div>
+                            <p id="tableNombre"></p>
+                            <div id="tablaImg">
+                            </div>
+                        </div>
+                    </td>
+                   <td id="tableSubtotal"></td>
+                   <td id="tableTotal"></td>
+                   <td>
+                       <span>
+                           <img src="./imgs/Red-Cross-Mark-Download-PNG.png" id="borrarImg">
+                        </span>
+                    </td>
+               </tbody>
+           </table>
+        </div>
+        <div>
+            <div id="elemento5">
+                <h2>Datos para la entrega</h2>
+                <div id="datosConfirmar">
+                    <div id="ladoIzquierdo1">
+                        <h3>Metodo de entrega</h3>
+                    </div>
+                    <div id="ladoDerecho1">
+                        <button id="botonE">Envío a residencia</button>
+                        <button id="botonR">Retiro por el local</button>
+                    </div>
+                    <div id="ladoIzquierdo1">
+                        <h3>Nombre y apellido</h3>
+                    </div>
+                    <div id="ladoDerecho1">
+                        <input type="text"  id="nombreApellido">
+                    </div>
+                    <div id="ladoIzquierdo1-d">
+                        <h3>Dirección</h3>
+                    </div>
+                    <div id="ladoDerecho1">
+                        <input type="text" id="direccion">
+                    </div>
+                    <div id="ladoIzquierdo1">
+                        <h3>Numero de telefono</h3>
+                    </div>
+                    <div id="ladoDerecho1">
+                        <input type="text" id="numeroTelefono">
+                    </div>
+                    <div id="ladoIzquierdo1">
+    
+                    </div>
+                    <div id="ladoDerecho1">
+                        <button id="botonConfirmar" onclick="datosUsuario()">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="elemento6">
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+       
+    </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./datos.js"></script>
 <script src="./main.js"></script>
+</body>
 </html>
